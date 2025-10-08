@@ -408,12 +408,14 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    overflow-x: auto;
     gap: 2rem;
+    padding: 1rem 0; /* Adds some padding for the scrollbar */
 }
 
 .project-card {
+    flex: 0 0 350px; /* This sets a fixed width for the cards */
     background: var(--bg-white);
     border-radius: var(--border-radius);
     overflow: hidden;
