@@ -409,13 +409,14 @@ section {
 
 .projects-grid {
     display: flex;
-    overflow-x: auto;
+    flex-wrap: nowrap; /* Prevents the items from wrapping to the next line */
+    overflow-x: auto;  /* Creates the horizontal scrollbar when needed */
     gap: 2rem;
-    padding: 1rem 0; /* Adds some padding for the scrollbar */
+    padding-bottom: 1.5rem; /* Adds space for the scrollbar */
 }
 
 .project-card {
-    flex: 0 0 350px; /* This sets a fixed width for the cards */
+    flex: 0 0 350px; /* Sets a fixed width of 350px for each card */
     background: var(--bg-white);
     border-radius: var(--border-radius);
     overflow: hidden;
