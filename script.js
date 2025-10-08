@@ -407,3 +407,31 @@ scrollToTopButton.addEventListener('mouseenter', () => {
 scrollToTopButton.addEventListener('mouseleave', () => {
     scrollToTopButton.style.transform = 'scale(1)';
 });
+
+
+
+
+// Projects carousel functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const projectsGrid = document.querySelector('.projects-grid');
+    const scrollLeftBtn = document.getElementById('scroll-left');
+    const scrollRightBtn = document.getElementById('scroll-right');
+
+    if (projectsGrid && scrollLeftBtn && scrollRightBtn) {
+        const scrollAmount = 370; // Width of one card (350px) + gap (2rem = 20px)
+
+        scrollLeftBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+    }
+});

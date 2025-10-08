@@ -409,11 +409,65 @@ section {
 
 .projects-grid {
     display: flex;
-    flex-wrap: nowrap; /* Prevents the items from wrapping to the next line */
-    overflow-x: auto;  /* Creates the horizontal scrollbar when needed */
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 2rem;
-    padding-bottom: 1.5rem; /* Adds space for the scrollbar */
+    padding: 1rem 0;
+    scroll-behavior: smooth; /* This ensures a smooth scrolling animation */
 }
+
+
+/* New styles for the projects wrapper and scroll buttons */
+.projects-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(26, 29, 35, 0.8);
+    color: var(--text-white);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-btn.left {
+    left: -20px;
+}
+
+.scroll-btn.right {
+    right: -20px;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.projects-grid {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
 
 .project-card {
     flex: 0 0 350px; /* Sets a fixed width of 350px for each card */
