@@ -342,6 +342,11 @@ section {
     color: var(--text-light);
 }
 
+.education-icon {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
