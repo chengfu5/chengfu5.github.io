@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chengcheng Fu | Analyst and Scientist</title>
-    <meta name="description" content="Portfolio of a passionate scientist and data analyst showcasing data-driven projects and analytical skills">
+
+    <title>Chengcheng Fu | Full-Stack Software & Data Applications Engineer</title>
+    <meta
+        name="description"
+        content="Portfolio of Chengcheng Fu, a full-stack software and data applications engineer building production web applications, APIs, data pipelines, and machine learning systems."
+    >
+    <meta name="theme-color" content="#0f1419">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images.favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Chengcheng Fu</a>
+                <a href="#home" aria-label="Chengcheng Fu home">Chengcheng Fu</a>
             </div>
-            <ul class="nav-menu">
+
+            <ul class="nav-menu" id="primary-navigation">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -37,379 +54,852 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+
+            <button
+                class="hamburger"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+            >
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="accent">Chengcheng!</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Data Applications Engineer and Full-Stack Developer</h2>
-                    <p class="hero-description">
-                        I am an AI and data applications engineer with experience spanning machine learning models, 
-                        research and development, full-stack web application development, and data engineering.
-                        I specialize in building data-driven software systems that automate complex workflows, 
-                        integrate scalable ETL pipelines and databases, and transform data into actionable business and operational insights.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-circle">
-                        <img src="images/headshot.JPG" alt="Profile Picture" class="profile-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+    <main id="main-content">
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="eyebrow">
+                            Software Engineering • Data Systems • Applied AI
+                        </p>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        I'm passionate about data and numbers and how they can be used to answer questions, predict solutions, and drive change. 
-                        I aim to create a positive impact on society by using data to make informed decisions and increase efficiency.
-                    </p>
-                    <p class="about-description">
-                        In my free time, you can find me exploring new places, working out at the gym, watching my Lakers, 
-                        plane spotting, playing the piano, or hanging out at a local cafe or bar.
-                    </p>
-                    <div class="about-education">
-                        <h3>Education <i class="fa-solid fa-graduation-cap"></i></h3>
-                        <ul class="education-list">
-                            <li class="education-item">
-                                <span class="education-degree">Master of Science</span>
-                                <span class="education-school">Georgia Institute of Technology</span>
+                        <h1 class="hero-title" id="hero-title">
+                            Hi, I’m <span class="accent">Chengcheng!</span>
+                        </h1>
+
+                        <h2 class="hero-subtitle">
+                            Full-Stack Software &amp; Data Applications Engineer
+                        </h2>
+
+                        <p class="hero-description">
+                            I build production-oriented software systems that automate complex workflows,
+                            connect APIs and databases, orchestrate scheduled data pipelines, and turn
+                            operational data into reliable tools and insights. My experience spans React,
+                            FastAPI, PostgreSQL, cloud infrastructure, machine learning, and scientific research.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                Get In Touch
+                            </a>
+                        </div>
+
+                        <ul
+                            class="hero-highlights"
+                            aria-label="Primary technical focus areas"
+                        >
+                            <li>
+                                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                Full-stack applications
                             </li>
-                            <li class="education-item">
-                                <span class="education-degree">Bachelor of Science</span>
-                                <span class="education-school">University of California San Diego</span>
+                            <li>
+                                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                                APIs &amp; data systems
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                                Workflow automation
                             </li>
                         </ul>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>500+</h3>
-                            <p>Citations</p>
-                        </div>
-                        <div class="stat">
-                            <h3>6+</h3>
-                            <p>Data Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Publications</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-img-container">
-                        <img src="images/portfolioimage.JPG" alt="About me">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills & Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-r-project"></i>
-                            <span>R</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-table-cells"></i>
-                            <span>Pandas</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>NumPy</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Tableau</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Scikit-learn & PyTorch</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Dash & Plotly</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-area"></i>
-                            <span>Matplotlib & Seaborn</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Development & Cloud Tools</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>VS Code</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-microsoft"></i>
-                            <span>Databricks</span>
+                    <div class="hero-image">
+                        <div class="profile-circle">
+                            <img
+                                src="images/headshot.JPG"
+                                alt="Portrait of Chengcheng Fu"
+                                class="profile-img"
+                                width="300"
+                                height="300"
+                                fetchpriority="high"
+                            >
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-wrapper">
-                <button class="scroll-btn left" id="scroll-left">&lt;</button>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/antibody.jpg" alt="Antibody Project">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://chengchengfu-masters-practicum.notion.site/Advancing-Computational-Methods-for-Antibody-Antigen-Binding-Predictions-2be0d0fea1ca815d96b6d2a56985f50f" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/chengfu5/masters-thesis" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
+            <a
+                class="scroll-indicator"
+                href="#about"
+                aria-label="Scroll to About section"
+            >
+                <span class="scroll-arrow" aria-hidden="true"></span>
+            </a>
+        </section>
+
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section-title" id="about-title">
+                    About Me
+                </h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I am a software and data engineer with a multidisciplinary background in
+                            full-stack development, data engineering, machine learning, and scientific
+                            research. I enjoy transforming manual or fragmented processes into maintainable,
+                            user-focused software systems.
+                        </p>
+
+                        <p class="about-description">
+                            My work combines frontend engineering, backend APIs, relational database design,
+                            automated synchronization jobs, data quality controls, analytics, and applied
+                            machine learning. That breadth helps me bridge technical implementation with
+                            real operational and business needs.
+                        </p>
+
+                        <p class="about-description">
+                            Outside of work, you can find me exploring new places, working out, watching the
+                            Lakers, plane spotting, playing piano, or spending time at a local cafe or bar.
+                        </p>
+
+                        <div class="about-education">
+                            <h3>
+                                Education
+                                <i
+                                    class="fa-solid fa-graduation-cap"
+                                    aria-hidden="true"
+                                ></i>
+                            </h3>
+
+                            <ul class="education-list">
+                                <li class="education-item">
+                                    <span class="education-degree">
+                                        Master of Science
+                                    </span>
+                                    <span class="education-school">
+                                        Georgia Institute of Technology
+                                    </span>
+                                </li>
+
+                                <li class="education-item">
+                                    <span class="education-degree">
+                                        Bachelor of Science
+                                    </span>
+                                    <span class="education-school">
+                                        University of California San Diego
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="project-content">
-                            <h3>Advancing Antibody Binding Prediction Models</h3>
-                            <p>Assessed the challenges of antibody-antigen binding models with Machine Learning.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>Scikit-learn</span>
-                                <span>SciPy</span>
-                                <span>Matplotlib</span>
-                                <span>Seaborn</span>
-                                <span>Statistics</span>
-                                <span>Machine Learning</span>
-                                <span>Data Visualization</span>
+
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>500+</h3>
+                                <p>Research Citations</p>
                             </div>
-                        </div>
-                    </div>
-    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/basketball.jpg" alt="NBA Analysis">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/chengfu5/NBA_MVP_predictions" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                </div>
+
+                            <div class="stat">
+                                <h3>6+</h3>
+                                <p>Technical Projects</p>
                             </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>NBA MVP Predictions</h3>
-                            <p>Using Machine Learning models to predict the NBA MVP on advaned analytical statistics.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>NumPy</span>
-                                <span>Matplotlib</span>
-                                <span>Seaborn</span>
-                                <span>Scikit-learn</span>
-                                <span>SciPy</span>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/wnt7a.jpg" alt="Rotator Cuff Project">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(23)00061-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2213671123000619%3Fshowall%3Dtrue" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Treating Rotator Cuff Muscle Injuries with Small Molecules</h3>
-                            <p>Showing the cellular mechanism of WNT7A and its role in inhibiting rotator cuff muscle injury.</p>
-                            <div class="project-tech">
-                                <span>ImageJ Analysis</span>
-                                <span>Prism</span>
-                                <span>Statistics</span>
-                                <span>Animal Models</span>
-                                <span>Molecular Biology</span>
-                                <span>Data Visualization</span>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/basketball.jpg" alt="NBA Live Win Predictor and Scoreboard">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://nba-live-scoreboard-1dq4.onrender.com/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/chengfu5/nba_live_game_predictor" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>NBA Live Win Predictor and Scoreboard</h3>
-                            <p>Build a live scoreboard and win % predictor using machine learning models.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>NumPy</span>
-                                <span>Plotly</span>
-                                <span>Dash</span>
-                                <span>Scikit-learn</span>
-                                <span>Joblib</span>
+
+                            <div class="stat">
+                                <h3>5+</h3>
+                                <p>Publications</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/jetblue.jpg" alt="Jetblue Analysis">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/chengfu5/jetblue-jfk-analysis" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
+                    <div class="about-image">
+                        <div class="about-img-container">
+                            <img
+                                src="images/portfolioimage.JPG"
+                                alt="Chengcheng Fu outside of work"
+                                width="800"
+                                height="900"
+                                loading="lazy"
+                            >
                         </div>
-                        <div class="project-content">
-                            <h3>Analyzing JetBlue Airways Operations at JFK Airport</h3>
-                            <p>Used Department of Transportation Flight Data for JetBlue to predict delays using Machine Learning and implement solutions for highly impacted routes.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>NumPy</span>
-                                <span>Scikit-learn</span>
-                                <span>XGBoost</span>
-                                <span>Matplotlib</span>
-                                <span>Optimized Simulation</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="scroll-btn right" id="scroll-right">&gt;</button> 
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's collaborate!</h3>
-                    <p>I'm always interested in new opportunities and captivating projects in data analytics. Please reach out if you'd like to collaborate or discuss ideas!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>cfu76@gatech.edu</span>
-                        </div>
-                        <!--
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        -->
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>New York, NY</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/chengfu5" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/chengchengfu/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/chengcheng_fu5" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                        <a href="https://scholar.google.com/citations?user=AL74Dh0AAAAJ&hl=en" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-google"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/myzppork" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="skills" class="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section-title" id="skills-title">
+                    Technical Skills &amp; Tools
+                </h2>
+
+                <div class="skills-grid">
+                    <article class="skill-category">
+                        <h3>Languages &amp; Frontend</h3>
+
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-python" aria-hidden="true"></i>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-js" aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-database" aria-hidden="true"></i>
+                                <span>SQL</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-r-project" aria-hidden="true"></i>
+                                <span>R</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-react" aria-hidden="true"></i>
+                                <span>React</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-html5" aria-hidden="true"></i>
+                                <span>HTML &amp; CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-category">
+                        <h3>Backend &amp; Databases</h3>
+
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                                <span>FastAPI</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-solid fa-plug" aria-hidden="true"></i>
+                                <span>REST APIs</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                <span>SQLAlchemy</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                                <span>Alembic</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i
+                                    class="fa-solid fa-clock-rotate-left"
+                                    aria-hidden="true"
+                                ></i>
+                                <span>Scheduled Jobs</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-category">
+                        <h3>Cloud, DevOps &amp; Data</h3>
+
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-aws" aria-hidden="true"></i>
+                                <span>AWS</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-docker" aria-hidden="true"></i>
+                                <span>Docker</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-table-cells" aria-hidden="true"></i>
+                                <span>Pandas &amp; NumPy</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                                <span>Scikit-learn &amp; PyTorch</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                <span>Plotly &amp; Tableau</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 class="section-title" id="projects-title">
+                    Featured Projects
+                </h2>
+
+                <div class="projects-wrapper">
+                    <button
+                        class="scroll-btn left"
+                        id="scroll-left"
+                        type="button"
+                        aria-label="Scroll projects left"
+                    >
+                        <i
+                            class="fa-solid fa-chevron-left"
+                            aria-hidden="true"
+                        ></i>
+                    </button>
+
+                    <div
+                        class="projects-grid"
+                        tabindex="0"
+                        aria-label="Scrollable project gallery"
+                    >
+                        <article class="project-card project-card-featured">
+                            <div class="project-image">
+                                <img
+                                    src="images/basketball.jpg"
+                                    alt="Abstract sports operations and software workflow"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <span
+                                            class="project-link project-link-disabled"
+                                            aria-label="Private internal project"
+                                        >
+                                            <i
+                                                class="fa-solid fa-lock"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <span class="project-label">
+                                    Featured Engineering Project
+                                </span>
+
+                                <h3>Enterprise Media Workflow Platform</h3>
+
+                                <p>
+                                    Designed and developed a full-stack internal platform that consolidates
+                                    operational workflows, integrates external APIs, automates metadata
+                                    ingestion, schedules synchronization jobs, and provides searchable,
+                                    audit-ready records.
+                                </p>
+
+                                <ul class="project-impact">
+                                    <li>React-based operational interfaces</li>
+                                    <li>FastAPI services and PostgreSQL data models</li>
+                                    <li>Automated ETL, validation, and deduplication</li>
+                                    <li>
+                                        Authentication, audit history, search, and health monitoring
+                                    </li>
+                                </ul>
+
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>FastAPI</span>
+                                    <span>PostgreSQL</span>
+                                    <span>SQLAlchemy</span>
+                                    <span>REST APIs</span>
+                                    <span>APScheduler</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/antibody.jpg"
+                                    alt="Antibody binding prediction project"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a
+                                            href="https://chengchengfu-masters-practicum.notion.site/Advancing-Computational-Methods-for-Antibody-Antigen-Binding-Predictions-2be0d0fea1ca815d96b6d2a56985f50f"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open antibody prediction project overview"
+                                        >
+                                            <i
+                                                class="fas fa-external-link-alt"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+
+                                        <a
+                                            href="https://github.com/chengfu5/masters-thesis"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open antibody prediction source code on GitHub"
+                                        >
+                                            <i
+                                                class="fab fa-github"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>Advancing Antibody Binding Prediction Models</h3>
+
+                                <p>
+                                    Evaluated the limitations of antibody-antigen binding prediction methods
+                                    using machine learning, statistical analysis, and reproducible data pipelines.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>Scikit-learn</span>
+                                    <span>SciPy</span>
+                                    <span>Statistics</span>
+                                    <span>Machine Learning</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/basketball.jpg"
+                                    alt="NBA MVP prediction analysis"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/chengfu5/NBA_MVP_predictions"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open NBA MVP prediction source code on GitHub"
+                                        >
+                                            <i
+                                                class="fab fa-github"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>NBA MVP Predictions</h3>
+
+                                <p>
+                                    Built machine learning models to estimate NBA MVP outcomes from advanced
+                                    player statistics and historical voting patterns.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>NumPy</span>
+                                    <span>Scikit-learn</span>
+                                    <span>SciPy</span>
+                                    <span>Visualization</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/basketball.jpg"
+                                    alt="NBA live scoreboard and win predictor"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a
+                                            href="https://nba-live-scoreboard-1dq4.onrender.com/"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open NBA live scoreboard application"
+                                        >
+                                            <i
+                                                class="fas fa-external-link-alt"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+
+                                        <a
+                                            href="https://github.com/chengfu5/nba_live_game_predictor"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open NBA live scoreboard source code on GitHub"
+                                        >
+                                            <i
+                                                class="fab fa-github"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>NBA Live Win Predictor &amp; Scoreboard</h3>
+
+                                <p>
+                                    Built a live scoreboard and in-game win probability application powered
+                                    by trained machine learning models and interactive visualizations.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Dash</span>
+                                    <span>Plotly</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Joblib</span>
+                                    <span>APIs</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/jetblue.jpg"
+                                    alt="JetBlue operations analysis"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a
+                                            href="https://github.com/chengfu5/jetblue-jfk-analysis"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open JetBlue operations analysis source code on GitHub"
+                                        >
+                                            <i
+                                                class="fab fa-github"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>Analyzing JetBlue Operations at JFK</h3>
+
+                                <p>
+                                    Used U.S. Department of Transportation flight data to model delays,
+                                    identify high-impact routes, and evaluate operational improvement scenarios.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>XGBoost</span>
+                                    <span>Scikit-learn</span>
+                                    <span>Simulation</span>
+                                    <span>Visualization</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img
+                                    src="images/wnt7a.jpg"
+                                    alt="Rotator cuff muscle injury research project"
+                                    width="700"
+                                    height="500"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a
+                                            href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(23)00061-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2213671123000619%3Fshowall%3Dtrue"
+                                            class="project-link"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Open published rotator cuff research article"
+                                        >
+                                            <i
+                                                class="fas fa-external-link-alt"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-content">
+                                <h3>Treating Rotator Cuff Muscle Injuries</h3>
+
+                                <p>
+                                    Investigated the cellular mechanism of WNT7A and its potential role in
+                                    reducing muscle degeneration following rotator cuff injury.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Image Analysis</span>
+                                    <span>Statistics</span>
+                                    <span>Prism</span>
+                                    <span>Molecular Biology</span>
+                                    <span>Scientific Research</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button
+                        class="scroll-btn right"
+                        id="scroll-right"
+                        type="button"
+                        aria-label="Scroll projects right"
+                    >
+                        <i
+                            class="fa-solid fa-chevron-right"
+                            aria-hidden="true"
+                        ></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title" id="contact-title">
+                    Get In Touch
+                </h2>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let’s build something useful.</h3>
+
+                        <p>
+                            I’m interested in opportunities involving full-stack software engineering,
+                            data platforms, workflow automation, applied AI, and technical products that
+                            solve real operational problems.
+                        </p>
+
+                        <div class="contact-details">
+                            <button
+                                class="contact-item contact-copy"
+                                type="button"
+                                data-copy="cfu76@gatech.edu"
+                                aria-label="Copy email address cfu76@gatech.edu"
+                            >
+                                <i
+                                    class="fas fa-envelope"
+                                    aria-hidden="true"
+                                ></i>
+                                <span>cfu76@gatech.edu</span>
+                            </button>
+
+                            <div class="contact-item">
+                                <i
+                                    class="fas fa-map-marker-alt"
+                                    aria-hidden="true"
+                                ></i>
+                                <span>New York, NY</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a
+                                href="https://github.com/chengfu5"
+                                class="social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub profile"
+                            >
+                                <i
+                                    class="fab fa-github"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/chengchengfu/"
+                                class="social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn profile"
+                            >
+                                <i
+                                    class="fab fa-linkedin"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+                            <a
+                                href="https://x.com/chengcheng_fu5"
+                                class="social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="X profile"
+                            >
+                                <i
+                                    class="fab fa-twitter"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+                            <a
+                                href="https://scholar.google.com/citations?user=AL74Dh0AAAAJ&hl=en"
+                                class="social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Google Scholar profile"
+                            >
+                                <i
+                                    class="fab fa-google"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form
+                        class="contact-form"
+                        action="https://formspree.io/f/myzppork"
+                        method="POST"
+                    >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Your Name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                placeholder="Your Email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Subject"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Your Message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+
+                        <p
+                            class="form-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Chengcheng's Portfolio. All rights reserved.</p>
+            <p>
+                &copy;
+                <span id="current-year">2026</span>
+                Chengcheng Fu. All rights reserved.
+            </p>
         </div>
     </footer>
+
+    <div
+        class="notification"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+    ></div>
+
+    <button
+        class="scroll-to-top"
+        type="button"
+        aria-label="Scroll to top"
+    >
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
